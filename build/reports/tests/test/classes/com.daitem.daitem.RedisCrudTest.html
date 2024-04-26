@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - RedisCrudTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>RedisCrudTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.daitem.daitem.html">com.daitem.daitem</a> &gt; RedisCrudTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.330s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Redis에 데이터를 저장하면 정상적으로 조회된다.</td>
+<td class="success">saveAndFindTest()</td>
+<td class="success">1.330s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>07:44:34.795 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.daitem.daitem.RedisCrudTest]: RedisCrudTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+07:44:34.926 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.daitem.DaitemApplication for test class com.daitem.daitem.RedisCrudTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-04-22T07:44:35.397+09:00  INFO 57092 --- [daitem] [    Test worker] com.daitem.daitem.RedisCrudTest          : Starting RedisCrudTest using Java 21.0.3 with PID 57092 (started by sulim in /Users/sulim/Desktop/realNew/daitem_new)
+2024-04-22T07:44:35.398+09:00  INFO 57092 --- [daitem] [    Test worker] com.daitem.daitem.RedisCrudTest          : The following 1 profile is active: &quot;local&quot;
+2024-04-22T07:44:36.564+09:00  INFO 57092 --- [daitem] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-22T07:44:36.565+09:00  INFO 57092 --- [daitem] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-22T07:44:36.680+09:00  INFO 57092 --- [daitem] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 1 Redis repository interface.
+2024-04-22T07:44:37.013+09:00  INFO 57092 --- [daitem] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-22T07:44:37.013+09:00  INFO 57092 --- [daitem] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-22T07:44:37.076+09:00  INFO 57092 --- [daitem] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.daitem.web.common.redis.PointRedisRepository; If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: jakarta.persistence.Entity, jakarta.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository
+2024-04-22T07:44:37.095+09:00  INFO 57092 --- [daitem] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface.
+레디스 커넥션
+2024-04-22T07:44:38.487+09:00  INFO 57092 --- [daitem] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-22T07:44:38.524+09:00  INFO 57092 --- [daitem] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-22T07:44:38.545+09:00  INFO 57092 --- [daitem] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-22T07:44:38.715+09:00  INFO 57092 --- [daitem] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-22T07:44:38.740+09:00  INFO 57092 --- [daitem] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-22T07:44:39.139+09:00  INFO 57092 --- [daitem] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15fe020d
+2024-04-22T07:44:39.141+09:00  INFO 57092 --- [daitem] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-22T07:44:40.400+09:00  INFO 57092 --- [daitem] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-22T07:44:40.450+09:00  INFO 57092 --- [daitem] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+레디스 저장 정보 시작
+2024-04-22T07:44:41.437+09:00  WARN 57092 --- [daitem] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-22T07:44:41.535+09:00 DEBUG 57092 --- [daitem] [    Test worker] o.s.s.a.h.RoleHierarchyImpl              : setHierarchy() - The following role hierarchy was set: 
+2024-04-22T07:44:42.279+09:00  INFO 57092 --- [daitem] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure Or [Mvc [pattern='/**']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@84180e2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c3d2a80, org.springframework.security.web.context.SecurityContextHolderFilter@5d0ea2af, org.springframework.security.web.header.HeaderWriterFilter@2c3c05ff, org.springframework.web.filter.CorsFilter@11bac6d7, org.springframework.security.web.authentication.logout.LogoutFilter@796267e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1828eff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5118c7fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48ebcce5, org.springframework.security.web.session.SessionManagementFilter@eaa901a, org.springframework.security.web.access.ExceptionTranslationFilter@7db53694, org.springframework.security.web.access.intercept.AuthorizationFilter@3110bb19]
+2024-04-22T07:44:42.946+09:00  INFO 57092 --- [daitem] [    Test worker] com.daitem.daitem.RedisCrudTest          : Started RedisCrudTest in 7.881 seconds (process running for 9.255)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (/Users/sulim/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.13/979ce25f7d3096a2e82214ba7dc972a05ce7a171/byte-buddy-agent-1.14.13.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.7</a> at 2024. 4. 22. 오전 7:44:44</p>
+</div>
+</div>
+</body>
+</html>
