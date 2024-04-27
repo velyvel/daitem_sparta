@@ -12,4 +12,8 @@ public class TestController {
         return ResponseEntity.ok("테스트 코드입니다.");
     }
 
+    @GetMapping("/api/v1/test2")
+    public ResponseEntity<String> test2() {
+        return ResponseEntity.ok("테스트 코드입니다. 이건 뜨니 미친놈아");
+    }
 }
