@@ -1,0 +1,1 @@
+{"doc":"","fields":[],"enumConstants":[],"methods":[{"name":"roleHierarchy","paramTypes":[],"doc":" 회원 등급 계층 설정<br />\n 상위 등급은 하위 등급의 모든 권한을 가진다.<br />\n ex) ROLE_ADMIN > ROLE_STAFF \\n ROLE_STAFF > ROLE_USER\n\n @return RoleHierarchy\n"}],"constructors":[]}

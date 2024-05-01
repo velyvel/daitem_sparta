@@ -1,4 +1,4 @@
-package com.daitem.domain.user;
+package com.daitem.domain.user.enumset;
 
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
