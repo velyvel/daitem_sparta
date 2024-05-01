@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 //import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 //import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -27,8 +29,8 @@ public class ProjectConfig {
         return new JPAQueryFactory(entityManager);
     }
 
-//    @Bean
-//    public PasswordEncoder bCryptPasswordEncoder() {
-//        return new BCryptPasswordEncoder();
-//    }
+    @Bean
+    public PasswordEncoder bCryptPasswordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 }

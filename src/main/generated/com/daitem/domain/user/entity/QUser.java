@@ -1,4 +1,4 @@
-package com.daitem.domain.user;
+package com.daitem.domain.user.entity;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -15,7 +15,7 @@ import com.querydsl.core.types.Path;
 @Generated("com.querydsl.codegen.DefaultEntitySerializer")
 public class QUser extends EntityPathBase<User> {
 
-    private static final long serialVersionUID = -1469548747L;
+    private static final long serialVersionUID = 461614220L;
 
     public static final QUser user = new QUser("user");
 
@@ -41,7 +41,7 @@ public class QUser extends EntityPathBase<User> {
 
     public final StringPath userName = createString("userName");
 
-    public final EnumPath<UserRoles> userRole = createEnum("userRole", UserRoles.class);
+    public final EnumPath<com.daitem.domain.user.enumset.UserRoles> userRole = createEnum("userRole", com.daitem.domain.user.enumset.UserRoles.class);
 
     public QUser(String variable) {
         super(User.class, forVariable(variable));
