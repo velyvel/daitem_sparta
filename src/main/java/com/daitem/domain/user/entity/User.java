@@ -1,7 +1,9 @@
 package com.daitem.domain.user.entity;
 
 import com.daitem.domain.common.enumset.YN;
+import com.daitem.domain.order.entity.Order;
 import com.daitem.domain.user.enumset.UserRoles;
+import com.daitem.domain.wishlist.entity.WishList;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -48,12 +50,12 @@ public class User implements UserDetails {
     private LocalDateTime lastLoginAt;
 
     // wishList 만들기
-//    @OneToMany(mappedBy = "user")
-//    private List<WishList> wishLists;
-//
-//    // 주문 리스트
-//    @OneToMany(mappedBy = "user")
-//    private List<Order> orders;
+    @OneToMany(mappedBy = "user")
+    private List<WishList> wishLists;
+
+    // 주문 리스트
+    @OneToMany(mappedBy = "user")
+    private List<Order> orders;
 
     // implements : UserDetails
     @Override

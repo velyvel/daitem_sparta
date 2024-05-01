@@ -1,0 +1,1 @@
+{"doc":"","fields":[],"enumConstants":[],"methods":[{"name":"orderList","paramTypes":["com.daitem.domain.user.entity.User","java.lang.Long"],"doc":" 주문 상세 api\n @Param id 주문 id\n"}],"constructors":[]}

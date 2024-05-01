@@ -1,0 +1,1 @@
+{"doc":"","fields":[{"name":"userId","doc":" 회원 시퀀스\n"}],"enumConstants":[],"methods":[{"name":"getUserId","paramTypes":[],"doc":"회원 시퀀스"},{"name":"setUserId","paramTypes":["java.lang.Long"],"doc":"회원 시퀀스"}],"constructors":[]}

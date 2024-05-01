@@ -1,0 +1,1 @@
+{"doc":"","fields":[{"name":"productId","doc":" 상품 페이지에 등록, 옵션들은 row 로 productDetailDto 저장\n"}],"enumConstants":[],"methods":[{"name":"getProductId","paramTypes":[],"doc":"상품 페이지에 등록, 옵션들은 row 로 productDetailDto 저장"},{"name":"setProductId","paramTypes":["java.lang.Long"],"doc":"상품 페이지에 등록, 옵션들은 row 로 productDetailDto 저장"}],"constructors":[]}

@@ -7,6 +7,7 @@ import com.querydsl.core.types.dsl.*;
 import com.querydsl.core.types.PathMetadata;
 import javax.annotation.processing.Generated;
 import com.querydsl.core.types.Path;
+import com.querydsl.core.types.dsl.PathInits;
 
 
 /**
@@ -33,6 +34,8 @@ public class QUser extends EntityPathBase<User> {
 
     public final StringPath loginId = createString("loginId");
 
+    public final ListPath<com.daitem.domain.order.entity.Order, com.daitem.domain.order.entity.QOrder> orders = this.<com.daitem.domain.order.entity.Order, com.daitem.domain.order.entity.QOrder>createList("orders", com.daitem.domain.order.entity.Order.class, com.daitem.domain.order.entity.QOrder.class, PathInits.DIRECT2);
+
     public final StringPath password = createString("password");
 
     public final StringPath phone = createString("phone");
@@ -42,6 +45,8 @@ public class QUser extends EntityPathBase<User> {
     public final StringPath userName = createString("userName");
 
     public final EnumPath<com.daitem.domain.user.enumset.UserRoles> userRole = createEnum("userRole", com.daitem.domain.user.enumset.UserRoles.class);
+
+    public final ListPath<com.daitem.domain.wishlist.entity.WishList, com.daitem.domain.wishlist.entity.QWishList> wishLists = this.<com.daitem.domain.wishlist.entity.WishList, com.daitem.domain.wishlist.entity.QWishList>createList("wishLists", com.daitem.domain.wishlist.entity.WishList.class, com.daitem.domain.wishlist.entity.QWishList.class, PathInits.DIRECT2);
 
     public QUser(String variable) {
         super(User.class, forVariable(variable));

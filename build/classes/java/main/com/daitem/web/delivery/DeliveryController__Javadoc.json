@@ -1,0 +1,1 @@
+{"doc":"","fields":[],"enumConstants":[],"methods":[{"name":"CanceledDelivery","paramTypes":["java.lang.Long","com.daitem.domain.user.entity.User"],"doc":" 반품 api\n 배송 완료 후 + 1 일 까지 취소할 수 있다(상태변경)\n 상태 변경 후 productDetail 재고 + amount\n @Param id 주문Id\n"}],"constructors":[]}
